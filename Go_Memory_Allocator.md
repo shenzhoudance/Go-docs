@@ -12,13 +12,13 @@ of one size class, which are then managed using a free bitmap.
 
 The allocator's data structures are:
 
-fixalloc: a free-list allocator for fixed-size off-heap objects,
+- fixalloc: a free-list allocator for fixed-size off-heap objects,
 	used to manage storage used by the allocator.
-mheap: the malloc heap, managed at page (8192-byte) granularity.
-mspan: a run of pages managed by the mheap.
-mcentral: collects all spans of a given size class.
-mcache: a per-P cache of mspans with free space.
-mstats: allocation statistics.
+- mheap: the malloc heap, managed at page (8192-byte) granularity.
+- mspan: a run of pages managed by the mheap.
+- mcentral: collects all spans of a given size class.
+- mcache: a per-P cache of mspans with free space.
+- mstats: allocation statistics.
 
 Allocating a small object proceeds up a hierarchy of caches:
 
