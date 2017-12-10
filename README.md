@@ -6,7 +6,9 @@
  - [Go Memory Allocator][3]
  - [GO Syscall][4]
  - [Go Environment Variables][5]
- - [Go Garbage Collector:type and heap bitmaps][6]
+ - Go Garbage Collector
+    - [type and heap bitmaps][6]
+    - [write barriers][7]
 
   [1]: https://github.com/golang/go
   [2]: https://github.com/J-J-J/Go-docs/blob/master/Go_Source_Hacking.md
@@ -14,3 +16,4 @@
   [4]: https://github.com/J-J-J/Go-docs/blob/master/GO_Syscall.md
   [5]: https://github.com/J-J-J/Go-docs/blob/master/Go_Environment_Variables.md
   [6]: https://github.com/J-J-J/Go-docs/blob/master/Go_Garbage_Collector-type-and-heap-bitmaps.md
+  [7]: https://github.com/J-J-J/Go-docs/blob/master/Go_Garbage_Collector-write-barriers.md
